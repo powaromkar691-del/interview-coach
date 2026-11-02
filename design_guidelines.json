@@ -1,0 +1,201 @@
+{
+  "theme": {
+    "mode": "light",
+    "strategy": "Professional Navy-Dominant Career SaaS with Electric Purple & Indigo Accents, crisp high-density cards, tactile telemetry, and clear interview simulation canvases.",
+    "emotional_tone": "Authoritative, empowering, calm under pressure, rigorously structured for fresh graduates and early career engineers."
+  },
+  "typography": {
+    "font_family_heading": "Outfit, 'Outfit Variable', sans-serif",
+    "font_family_body": "Plus Jakarta Sans, 'Plus Jakarta Sans Variable', sans-serif",
+    "font_family_mono": "JetBrains Mono, 'JetBrains Mono Variable', monospace",
+    "scale_px": {
+      "display": 56,
+      "h1": 42,
+      "h2": 32,
+      "h3": 24,
+      "h4": 20,
+      "body": 16,
+      "caption": 14
+    },
+    "font_imports": [
+      "@import \"@fontsource-variable/outfit\";",
+      "@import \"@fontsource-variable/plus-jakarta-sans\";",
+      "@import \"@fontsource-variable/jetbrains-mono\";"
+    ],
+    "css_theme_variables": {
+      "--font-heading": "'Outfit Variable', sans-serif",
+      "--font-sans": "'Plus Jakarta Sans Variable', sans-serif",
+      "--font-mono": "'JetBrains Mono Variable', monospace"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "link": "#4338CA",
+          "error": "#BE123C",
+          "success": "#047857",
+          "warning": "#B45309"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "border": "#E2E8F0",
+          "hover_bg": "#F1F5F9",
+          "accent_text": "#4F46E5"
+        }
+      },
+      {
+        "name": "navy_hero",
+        "kind": "solid",
+        "bg": "#0B132B",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "highlight": "#A855F7",
+          "accent_badge": "#38BDF8",
+          "link": "#C084FC"
+        }
+      },
+      {
+        "name": "interview_canvas",
+        "kind": "solid",
+        "bg": "#0F172A",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "recording_pulse": "#EF4444",
+          "ai_accent": "#818CF8",
+          "code_bg": "#020617"
+        }
+      },
+      {
+        "name": "chip_badge_neutral",
+        "kind": "solid",
+        "bg": "#EEF2F6",
+        "on_bg": "#1E293B",
+        "on_bg_muted": "#475569"
+      },
+      {
+        "name": "chip_badge_purple",
+        "kind": "solid",
+        "bg": "#F3E8FF",
+        "on_bg": "#581C87",
+        "on_bg_muted": "#6B21A8"
+      },
+      {
+        "name": "chip_badge_emerald",
+        "kind": "solid",
+        "bg": "#DCFCE7",
+        "on_bg": "#14532D",
+        "on_bg_muted": "#166534"
+      },
+      {
+        "name": "glass_header",
+        "kind": "glass",
+        "contrast_against": "#0F172A",
+        "guarantee": "backdrop-blur-xl bg-white/90 border-b border-slate-200/80 shadow-xs",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569"
+      }
+    ],
+    "accent": "#4F46E5",
+    "on_accent": "#FFFFFF",
+    "brand_navy": "#0B132B",
+    "brand_deep_blue": "#1E293B",
+    "brand_purple": "#7C3AED",
+    "brand_purple_subtle": "#EDE9FE"
+  },
+  "entry_surfaces": {
+    "/": "Editorial Split Hero — Bold Navy Brand statement with live readiness radar & CTA left, mock interview telemetry simulation right",
+    "/auth/sign-in": "Branded Split Auth — Deep Navy career impact panel left, centered high-clarity credentials form right",
+    "/auth/sign-up": "Branded Split Auth — Placement readiness value propositions left, step-one student registration form right",
+    "/onboarding": "Distraction-free Focused Stepper — Multi-step progressive disclosure card with milestone trail and real-time profile completion score",
+    "/dashboard": "High-Density Command Grid — Preparation metric strip top, score trends chart left, weak areas radar and active roadmap right",
+    "/interview": "Interactive Audio-Text Simulator — Stage-aware split layout with interviewer prompt top-left, speech/text response editor bottom, real-time rubric guide right",
+    "/interview/report": "Executive Placement Evaluation — Overall band score banner, category breakdown radar, transcribed Q&A accordion with suggested answers",
+    "/resume": "Split Resume Diagnostics — Drag-and-drop document parser left, interactive ATS score cards, grammar fixes, and job match analysis right",
+    "/practice": "Categorized MCQ Arena — 9 CS core domain cards with difficulty filters, instant explanation drawer, and mastery telemetry"
+  },
+  "visual_enhancers": {
+    "borders": "1px crisp slate border (`border-slate-200` on panels, `border-slate-800` on dark canvas)",
+    "shadows": "Layered micro-shadows (`shadow-[0_1px_3px_rgba(15,23,42,0.06),0_10px_20px_-5px_rgba(15,23,42,0.04)]`)",
+    "radii": "Systematic 8px to 12px nested curves (`rounded-xl` for cards, `rounded-lg` for inner widgets and buttons, `rounded-full` for status pills)",
+    "micro_interactions": "Subtle card lifts (`hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-out`), smooth tab indicators, tactile button active states (`active:scale-[0.98]`)"
+  },
+  "layouts_and_grids": {
+    "mobile_first": "Default single-column stack on 375px/mobile browsers, responsive breakpoint expansion at md (768px) and lg (1024px+). Navigation transforms from sticky top glass bar with bottom sheet trigger to full desktop horizontal bar with avatar drop menu.",
+    "dashboard_grid": "Tetris-dense layout: Top 4-card metric strip (`grid-cols-2 lg:grid-cols-4`), main section (`grid-cols-1 lg:grid-cols-12`) with 8-col Recharts score timeline & recent sessions, 4-col Weak Area Focus & Daily Roadmap checklist.",
+    "interview_room_grid": "Split screen (`grid-cols-1 lg:grid-cols-12`): 7-col Question & Answer interactive canvas, 5-col Real-Time Evaluation Rubric & Suggested Concepts panel.",
+    "resume_analyzer_grid": "Side-by-side (`grid-cols-1 lg:grid-cols-12`): 4-col Document upload & extracted text viewer, 8-col Diagnostic breakdown (ATS score, keyword match, grammar & clarity recommendations)."
+  },
+  "motion": {
+    "engine": "motion/react",
+    "entrance_preset": "initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.25, ease: 'easeOut' }}",
+    "stagger_preset": "variants={{ container: { transition: { staggerChildren: 0.06 } } }}",
+    "recording_animation": "animate-pulse with subtle radial ring wave for active microphone / voice simulation state"
+  },
+  "accessibility": {
+    "contrast_standard": "APCA & WCAG AA 4.5:1 strictly enforced across light and dark surfaces",
+    "aria_labels": "All icon-only buttons (close, copy, mic, sound, menu) must have explicit `aria-label`",
+    "form_labels": "All form controls use explicit Shadcn `Label` components paired via `htmlFor` and input `id`",
+    "test_attributes": "All clickable buttons, input fields, tabs, navigation links, and key status badges MUST provide unique `data-testid` attributes (e.g. `data-testid='start-mock-interview-button'`, `data-testid='resume-upload-dropzone'`)"
+  },
+  "image_urls": [
+    {
+      "category": "hero_interview_context",
+      "url": "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwaW50ZXJ2aWV3JTIwcHJlcGFyYXRpb24lMjB0ZWNofGVufDB8fHx8MTc5MjEyNzg0N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Student in interactive mock interview session with AI interviewer representation",
+      "placement": "Landing page hero dynamic preview or feature spotlight"
+    },
+    {
+      "category": "young_professional_success",
+      "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMHBvcnRyYWl0JTIwcmVzdW1lfGVufDB8fHx8MTc5MjEyNzg0N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Confident graduate student holding placement offer portfolio",
+      "placement": "Landing page social proof & testimonial spotlight"
+    },
+    {
+      "category": "technical_preparation_coder",
+      "url": "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2xsZWdlJTIwZ3JhZHVhdGUlMjBzb2Z0d2FyZSUyMGVuZ2luZWVyfGVufDB8fHx8MTc5MjEyNzg0N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Software engineering fresher solving data structures & algorithmic challenges",
+      "placement": "Technical Preparation section showcase"
+    },
+    {
+      "category": "mock_interview_panel",
+      "url": "https://images.unsplash.com/photo-1686771416537-bf4a4f263d88?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHxzdHVkZW50JTIwaW50ZXJ2aWV3JTIwcHJlcGFyYXRpb24lMjB0ZWNofGVufDB8fHx8MTc5MjEyNzg0N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Professional 1-on-1 interview feedback dialog",
+      "placement": "How it works step 2: Real-time AI Simulation"
+    }
+  ],
+  "component_structure": {
+    "navigation": "frontend/src/components/layout/Navbar.tsx & Sidebar.tsx",
+    "landing": "frontend/src/pages/Home.tsx with Hero, FeatureGrid, RolesSupported, HowItWorks, Testimonials, FAQ, Footer",
+    "onboarding": "frontend/src/pages/Onboarding.tsx with 4-step wizard (Education, Skills, Target Role, Schedule)",
+    "dashboard": "frontend/src/pages/Dashboard.tsx with Recharts Readiness Progress, Weak Areas Radar, Daily Tasks",
+    "interview_setup": "frontend/src/pages/InterviewSetup.tsx with Role, Type, Difficulty & Question Count selector",
+    "interview_room": "frontend/src/pages/InterviewRoom.tsx with audio/text Q&A runner, timer, AI response evaluator",
+    "interview_report": "frontend/src/pages/InterviewReport.tsx with overall scores, question breakdown, model answers & AI disclaimer",
+    "resume_analyzer": "frontend/src/pages/ResumeAnalyzer.tsx with file parser, ATS scoring, JD matching, bullet suggestions",
+    "technical_practice": "frontend/src/pages/TechnicalPractice.tsx with 9 CS subjects, MCQ engine, score history",
+    "roadmap": "frontend/src/pages/Roadmap.tsx with weekly goals checklist, progress tracking",
+    "history": "frontend/src/pages/History.tsx with comprehensive analytics & session history"
+  },
+  "instructions_to_main_agent": [
+    "Theme and Styling: Implement the Navy (#0B132B) and Indigo (#4F46E5) with subtle Violet (#7C3AED) accents palette. The background is crisp slate (#F8FAFC) for daylight clarity and high focus.",
+    "Typography: Use Outfit for headings and Plus Jakarta Sans for body copy. Import them from `@fontsource-variable/outfit` and `@fontsource-variable/plus-jakarta-sans` in `src/index.css`.",
+    "Mobile Responsiveness: Mobile viewport (375px+) is primary. Ensure all tables, interview textareas, charts, and filter pills wrap cleanly and do not overflow horizontal bounds.",
+    "Testing Attributes: Add `data-testid` to every button, link, tab, input, select trigger, and modal close button.",
+    "Data Visualization: Use Recharts for the Readiness Trend over time and Domain Mastery radar/bar charts. Keep tooltips styled with navy background and white text.",
+    "AI Scoring Disclaimer: Always include the mandatory note 'AI scores are predictive estimates based on placement benchmarks' on all feedback cards and report banners."
+  ]
+}
